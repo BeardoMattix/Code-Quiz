@@ -28,6 +28,12 @@ Once the user has completes the quiz, they can save their score to the leaderboa
 ## Functionality
 ![code-quiz-demo](https://user-images.githubusercontent.com/82903201/124629031-06a21400-de4f-11eb-91a1-eef1252ee391.gif)
 
+#### The demo shows the main functions of the quiz:
+* Timer starts when the game page loads.
+* The score increments or decrements depending on correct or incorrect answers.
+* The time is reduced by 10 seconds when a wrong answer is chosen. 
+* Users can save their scores.
+* The leaderboard shows the 10 most recent scores. 
 
 ## File Architecture
 ```
