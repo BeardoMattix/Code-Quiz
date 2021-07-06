@@ -4,7 +4,7 @@
 
 ## Link to Deployed Site
 
-[Code Quiz](https://www.google.com)
+[Code Quiz](https://beardomattix.github.io/Code-Quiz/)
 
 ## Table of Contents
   * [Motivation and Technologies](#motivation)
