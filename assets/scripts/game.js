@@ -58,14 +58,12 @@ startGame = () => {
 getNewQuestions = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-    return window.location.assign("/pages/end.html");
+    return window.location.assign("../pages/end.html");
   }
 
   questionCounter++;
   progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-  progressBarFull.getElementsByClassName.width = `${
-    (questionCounter / MAX_QUESTIONS) * 100
-  } %`;
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
   const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionsIndex];
@@ -127,17 +125,17 @@ const countdownTimer = document.getElementById("countdown");
 setInterval(updatedCountdown, 1000);
 
 function updatedCountdown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
 
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    countdownTimer.innerHTML = `${minutes}: ${seconds}`;
-    time--;
-    if(time < 0) {
-        alert("GAME OVER!")
-        clearInterval(startingMinutes);
-        localStorage.setItem("mostRecentScore", score);
-        return window.location.assign("/pages/end.html");
-    }
+  countdownTimer.innerHTML = `${minutes}: ${seconds}`;
+  time--;
+  if (time < 0) {
+    alert("GAME OVER!");
+    clearInterval(startingMinutes);
+    localStorage.setItem("mostRecentScore", score);
+    return window.location.assign("../pages/end.html");
+  }
 }
