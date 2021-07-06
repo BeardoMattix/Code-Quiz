@@ -15,4 +15,4 @@ The quiz asks users questions about basic JavaScript functionality and increment
 Once the user has completes the quiz, they can save their score to the leaderboard and see how they stack up against other users.
 
 ## Demo
-![Demo](https://github.com/BeardoMattix/Code-Quiz/issues/1#issue-938028924)
+![code-quiz-demo](https://user-images.githubusercontent.com/82903201/124629031-06a21400-de4f-11eb-91a1-eef1252ee391.gif)
